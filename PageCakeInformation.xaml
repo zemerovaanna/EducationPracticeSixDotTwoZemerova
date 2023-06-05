@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OnlineCookery.PageCakeInformation">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Информация по тортам - кулинария (заказ и покупка тортов):" TextColor="IndianRed" HorizontalOptions="Center"/>
+            <Label x:Name="Name"/>
+            <Label x:Name="Category"/>
+            <Label x:Name="Cost"/>
+            <Label x:Name="Unit"/>
+            <Label x:Name="Fats"/>
+            <Label x:Name="Protein"/>
+            <Label x:Name="Carbohydrates"/>
+            <Label x:Name="Vitamins"/>
+            <Label x:Name="Caterer"/>
+            <Label x:Name="Quantity"/>
+            <Label x:Name="Recipe"/>
+
+            <StackLayout Orientation="Horizontal" Margin="0,30,0,0">
+                <Label Text="Итоговая сумма:"/>
+                <Label x:Name="LabelAmount"/>
+            </StackLayout>
+
+            <Entry x:Name="EntryQuanity" Placeholder="Введите количество"/>
+            <Button Text="Посчитать" Clicked="ButtonClickedCaclulate"/>
+            <Button Text="Оформить покупку" Clicked="ButtonClickedBuy"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

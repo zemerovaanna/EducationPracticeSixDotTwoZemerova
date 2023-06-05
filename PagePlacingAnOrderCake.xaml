@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OnlineCookery.PagePlacingAnOrderCake">
+    
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical">
+
+            <Label Text="Дополнительно:" HorizontalOptions="Center"/>
+
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="FourtyPrecent" Color="White"/>
+                <Label Text = "40% - мастика со сложными фигурами людей" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="TwentyPrecent" Color="White"/>
+                <Label Text = "20% - дополнительное украшение с помощью крема" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="TenPrecent" Color="White"/>
+                <Label Text = "10% - наличие подписи." Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Количество в наличии:"/>
+                <Label x:Name="LabelQuanityInStock"/>
+            </StackLayout>
+
+            <Label Text="Количество в заказе:"/>
+            <Entry x:Name="EntrySelectedQuanity"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Итоговая сумма:"/>
+                <Label x:Name="LabelTotalAmount"/>
+            </StackLayout>
+
+            <Button Text="Посчитать" Clicked="ButtonClickedCaclulate"/>
+            <Button Text="Купить" Clicked="ButtonClickedBuy"/>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+    
+</ContentPage>
